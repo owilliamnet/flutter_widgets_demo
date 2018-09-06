@@ -10,12 +10,12 @@ class _ListasPageState extends State<ListasPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Listas'),
+        title: Text('Listas 2'),
         centerTitle: true,
         backgroundColor : Colors.lightGreenAccent
       ),
       body: Center(
-        child: Text('Listas'),
+        child: Text('Listas 2'),
       )
     );
   }

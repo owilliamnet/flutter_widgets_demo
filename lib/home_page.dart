@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
             ListTile(
                 title: Text(
                   'Botões',
-                  style: TextStyle(color: Colors.red),
+                  style: TextStyle(color: Colors.black),
                 ),
                 trailing: Icon(Icons.arrow_forward),
                 onTap: () {
@@ -57,11 +57,10 @@ class _HomePageState extends State<HomePage> {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) => BotoesPage()));
                 }),
-            Divider(),
             ListTile(
               title: Text(
                 'Listas',
-                style: TextStyle(color: Colors.red),
+                style: TextStyle(color: Colors.black),
               ),
               trailing: Icon(Icons.list),
               onTap: () {
@@ -70,17 +69,28 @@ class _HomePageState extends State<HomePage> {
                     builder: (BuildContext context) => ListasPage()));
               },
             ),
-            Divider(),
             ListTile(
               title: Text(
                 'Cards',
-                style: TextStyle(color: Colors.red),
+                style: TextStyle(color: Colors.black),
               ),
               trailing: Icon(Icons.tag_faces),
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => CardsPage()));
+              },
+            ),
+            Divider(),
+            ListTile(
+              title:
+                  Text('Cancelar', style: TextStyle(color: Colors.redAccent)),
+              trailing: Icon(
+                Icons.close,
+                color: Colors.redAccent,
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
               },
             ),
           ],
